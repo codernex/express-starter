@@ -28,7 +28,6 @@ export const requestHandler = <TQuery, TBody, TParams>(
       console.log(config);
     }
     await Promise.resolve(handler(req, res, next)).catch((err) => {
-
       return next(new ErrorHandler(prettyError(err), err.statusCode));
     });
   };
