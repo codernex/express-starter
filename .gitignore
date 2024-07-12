@@ -1,0 +1,6 @@
+node_modules
+package-lock.*
+**/dist
+**/uploads
+**/dist.**
+.env
